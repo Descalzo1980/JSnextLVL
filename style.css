@@ -1,0 +1,20 @@
+.btn-block{
+    background:grey;
+}
+
+button{
+    width: 60px;
+    height: 30px;
+    background-color: yellow;
+}
+.blue_some{
+    background-color: blue;
+}
+
+/* добавил класс динамически и св-во прменилось */
+.red{
+    background-color:red; 
+}
+.green{
+    background-color:green;
+}
