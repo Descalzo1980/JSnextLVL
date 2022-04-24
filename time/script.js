@@ -7,6 +7,11 @@
 const btn = document.querySelector('.btn');
 let timerId,
     i = 0;
+//     max = 300,
+//     min = 0;
+// let minNum = Math.floor(Math.random() * 300);
+// let maxNum = Math.floor(Math.random() * 300);
+// let sum = maxNum - minNum;
 
 function myAnimation () {
     const elem = document.querySelector('.box');
@@ -18,7 +23,10 @@ function myAnimation () {
         }else{
             pos++;
             elem.style.top = pos + "px";
-            elem.style.left = pos + 'px';
+            elem.style.left = pos + "px";
+            // elem.style.top = sum + "px";
+            // elem.style.top = pos + `${maxNum} + "px"`;
+            // elem.style.left = pos + Math.random() * (max - min) + min;
         }
     }
 }
