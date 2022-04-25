@@ -58,3 +58,18 @@ btn.classList.add('red');
 wrapper.append(btn); // здесь добавляем кнопку и она тоже делает Хеллоу
 
 
+const box = document.querySelector('.box'),
+      btnNext = document.querySelector('.btn-next');
+
+// const width = box.clientWidth;
+// const height = box.clientHeight;
+// const width = box.offsetWidth;
+// const height = box.offsetHeight;
+const width = box.scrollWidth;
+const height = box.scrollHeight;
+
+console.log(width,height);
+
+btnNext.addEventListener('click', () => { // расрываем содержимое
+    box.style.height = box.scrollHeight + 'px';
+});
