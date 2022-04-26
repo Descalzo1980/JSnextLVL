@@ -70,6 +70,21 @@ const height = box.scrollHeight;
 
 console.log(width,height);
 
-btnNext.addEventListener('click', () => { // расрываем содержимое
-    box.style.height = box.scrollHeight + 'px';
+btnNext.addEventListener('click', () => { 
+    box.style.height = box.scrollHeight + 'px'; // инлайн стили раскрываем содержимое
+    console.log(box.scrollTop); // сколько прочитал в px
 });
+
+console.log(box.getBoundingClientRect().top);
+
+const style = window.getComputedStyle(box); //css можно получать стили псевдоэлементов но не работать
+
+console.log(style.display);
+
+console.log(document.documentElement.clientWidth);
+console.log(document.documentElement.scrollTop);
+
+document.documentElement.scrollTop = 0; // уход вверх например
+
+window.scrollBy(0, 400); // скролл вниз
+window.scrollTo(0, 400); // по всей странице
