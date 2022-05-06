@@ -132,4 +132,15 @@ const {name, job} = macDuk;
 console.log(name,job);
 
 
-// map , filter
+const log = function(a, b, ...rest){
+    console.log(a,b,rest);
+}
+
+log('one', 'two', 'op', 'asdsad');
+
+function calcOrDoudbe(number, basis = 2){
+    // basis = basis || 2; // до ES6
+    console.log(number * basis);
+}
+
+calcOrDoudbe(4);
