@@ -24,7 +24,7 @@ inputRub.addEventListener("input", () => {
     // с load
     request.addEventListener("load", () => {
         if (isNaN(inputRub.value)) {
-            alert("Введите число");
+            alert("Введите число в поле RUB");
         } else if (request.status === 200) {
             const data = JSON.parse(request.response);
             inputUsd.value = (+inputRub.value / data.current.usd).toFixed(2);
